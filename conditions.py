@@ -13,3 +13,11 @@ if hasGoodCredit and hasHighIncome:
     print("Elegible for loan")
 else:
     print("Not Elegible for loan")
+
+
+isMayorEdad = False
+
+while not isMayorEdad:
+    edad = input("Ingrese su edad")
+    isMayorEdad = int(edad) >= 18
+print("Puede entrar a la discoteca")
