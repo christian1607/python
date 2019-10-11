@@ -1,3 +1,6 @@
+import utils
+import repository.conexion
+
 class Point:
 
     # Constructors, python support just one constructor per class,
@@ -40,4 +43,13 @@ class Person:
 
 
 person=Person("christian")
-person.talk();
+person.talk()
+
+
+#Usando metodo de otro archivo python
+print("Suma: "+ str(utils.sumar(1,2)))
+
+
+#usando llamada a metodo de un paquete creado
+repository.conexion.obtener_conexion("admin","123456","192.168.1.100")
+repository.conexion.cerrar_conexion()
