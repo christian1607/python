@@ -1,5 +1,6 @@
 import utils
 import repository.conexion
+from repository import conexion
 
 class Point:
 
@@ -51,5 +52,5 @@ print("Suma: "+ str(utils.sumar(1,2)))
 
 
 #usando llamada a metodo de un paquete creado
-repository.conexion.obtener_conexion("admin","123456","192.168.1.100")
-repository.conexion.cerrar_conexion()
+conexion.obtener_conexion("admin","123456","192.168.1.100")
+conexion.cerrar_conexion()
