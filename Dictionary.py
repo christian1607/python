@@ -7,6 +7,16 @@ customer = {
 print(customer.get("name"))
 print(customer["name"])
 
+for value in customer.values():
+    print(value)
+
+
+for key in customer.keys():
+    print(key)
+
+for k,v in customer.items():
+    print(f"Key: {k} Value: {v}")
+
 phoneNumber= input("Ingress phone number: ")
 
 number = {
@@ -28,3 +38,20 @@ for digito in phoneNumber:
 
 print(stringNumber)
 
+
+
+
+dicti = {}
+def multiple_letter_count(string):
+    for lt in string:
+        print(lt)
+        print(dicti.get(lt))
+        if dicti.get(lt) is None:
+            dicti[lt] = 1
+        else:
+            dicti[lt] = dicti[lt]+1
+
+    return dicti
+
+
+print(multiple_letter_count("awesome"))

@@ -26,7 +26,19 @@ print(number3)
 numbersNoRepeted=[]
 for item in numbers:
     if not numbersNoRepeted.__contains__(item):
+    #if item in numbersNoRepeted
         numbersNoRepeted.append(item)
 
 
 print(numbersNoRepeted)
+
+
+datos = ["gato", 2]
+print(datos)
+
+# datos.append(3,2,2) doesn't work
+datos.append([2,2,2,2,2]) # this add an array as element of the existing array,
+print(datos)
+
+datos.extend([2,3,4,5,6,]) # this join arrays
+print(datos)

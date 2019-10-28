@@ -36,3 +36,19 @@ for var in ['a','b','c','d']:
 numbers = [5,2,5,2,2]
 for x in numbers:
     print('X'*x)
+
+
+# Define speak below:
+def speak(animal='woof'):
+    if animal == 'pig':
+        return 'oink'
+    elif animal == 'duck':
+        return 'quack'
+    elif animal == 'cat':
+        return 'miau'
+    elif animal == 'dog':
+        return 'woof'
+    elif animal == 'woof':
+        return 'woof'
+    else:
+        return '?'
