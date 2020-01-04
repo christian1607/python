@@ -1,5 +1,6 @@
 import utils
 import repository.conexion
+from  client_http import cliente_http
 from repository import conexion
 
 class Point:
@@ -54,3 +55,5 @@ print("Suma: "+ str(utils.sumar(1,2)))
 #usando llamada a metodo de un paquete creado
 conexion.obtener_conexion("admin","123456","192.168.1.100")
 conexion.cerrar_conexion()
+
+cliente_http.call_ycombinator();

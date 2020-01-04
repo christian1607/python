@@ -55,6 +55,3 @@ print(course.replace("Beginners","Experts"))
 print(course.__contains__("Python"))
 print("Python" in course)
 
-
-
-

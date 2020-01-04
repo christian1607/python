@@ -38,3 +38,6 @@ def extremes(ass):
 print(extremes([1,2,3,4,5]))
 print(extremes("alcatraz"))
 print(extremes([1,2,3,4,5]))
+
+
+print(all(n%2==0 for n in [10, 2, 0, 4, 4, 4, 40]))
