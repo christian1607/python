@@ -1,4 +1,7 @@
 import requests
+import pyfiglet
+
+print(pyfiglet.figlet_format("JOKE IS FUNNY"))
 
 response = requests.get("https://icanhazdadjoke.com/", headers={"Accept": "application/json"})
 print(response.text)
